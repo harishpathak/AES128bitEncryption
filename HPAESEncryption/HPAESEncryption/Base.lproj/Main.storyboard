@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cwi-UZ-asj">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plain text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KG-6z-yXp">
+                                        <rect key="frame" x="40" y="122" width="295" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="foc-En-V8E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encrypted text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFF-k9-PCt">
+                                        <rect key="frame" x="40" y="297" width="295" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="GqU-Uj-gdB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ybw-JI-Ar1">
+                                        <rect key="frame" x="40" y="332" width="295" height="120"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="619-FK-734"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD8-lf-1io">
+                                        <rect key="frame" x="40" y="472" width="295" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.3844943576" blue="0.056776258679999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Ruc-Ef-8rf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                        <state key="normal" title="Encrypt !!!"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionEncrypt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rAi-B9-d8M"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0E-Gu-6GU">
+                                        <rect key="frame" x="40" y="532" width="295" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.3844943576" blue="0.056776258679999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="LFV-F2-qhd"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="VkJ-H0-cRW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                        <state key="normal" title="Decrypt !!!"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionDecrypt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WaX-NL-VSk"/>
+                                            <action selector="actionEncrypt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GBw-tK-74g"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Swk-vk-bud">
+                                        <rect key="frame" x="40" y="157" width="295" height="120"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="WxX-9s-sLv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(set encryption key and iv in code)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMF-qq-tc4">
+                                        <rect key="frame" x="40" y="72" width="295" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="eVB-aq-n0a"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AES 128 bit Encryption" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mm1-Cv-7Ql">
+                                        <rect key="frame" x="40" y="40" width="295" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="MyL-0J-c4e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.25490196079999999" green="0.61568627450000002" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="RFF-k9-PCt" secondAttribute="trailing" constant="40" id="7cy-NH-JA6"/>
+                                    <constraint firstItem="bMF-qq-tc4" firstAttribute="leading" secondItem="Cwi-UZ-asj" secondAttribute="leading" constant="40" id="907-NK-vvi"/>
+                                    <constraint firstItem="Mm1-Cv-7Ql" firstAttribute="top" secondItem="Cwi-UZ-asj" secondAttribute="top" constant="40" id="DK6-pc-4rX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Mm1-Cv-7Ql" secondAttribute="trailing" constant="40" id="Eoz-Sz-bDt"/>
+                                    <constraint firstAttribute="trailing" secondItem="e0E-Gu-6GU" secondAttribute="trailing" constant="40" id="K3k-gP-Dz8"/>
+                                    <constraint firstAttribute="trailing" secondItem="8KG-6z-yXp" secondAttribute="trailing" constant="40" id="LFO-4C-RmJ"/>
+                                    <constraint firstItem="WD8-lf-1io" firstAttribute="top" secondItem="ybw-JI-Ar1" secondAttribute="bottom" constant="20" id="NUn-Hb-5CY"/>
+                                    <constraint firstItem="8KG-6z-yXp" firstAttribute="leading" secondItem="Cwi-UZ-asj" secondAttribute="leading" constant="40" id="Nms-uF-sho"/>
+                                    <constraint firstAttribute="trailing" secondItem="Swk-vk-bud" secondAttribute="trailing" constant="40" id="RNU-4Q-Jb5"/>
+                                    <constraint firstAttribute="trailing" secondItem="ybw-JI-Ar1" secondAttribute="trailing" constant="40" id="SKv-h8-AWx"/>
+                                    <constraint firstItem="ybw-JI-Ar1" firstAttribute="top" secondItem="RFF-k9-PCt" secondAttribute="bottom" constant="5" id="SxT-cx-azN"/>
+                                    <constraint firstItem="RFF-k9-PCt" firstAttribute="leading" secondItem="Cwi-UZ-asj" secondAttribute="leading" constant="40" id="Uh6-Ei-clK"/>
+                                    <constraint firstItem="WD8-lf-1io" firstAttribute="leading" secondItem="Cwi-UZ-asj" secondAttribute="leading" constant="40" id="dkO-1g-nyn"/>
+                                    <constraint firstItem="bMF-qq-tc4" firstAttribute="top" secondItem="Mm1-Cv-7Ql" secondAttribute="bottom" id="eG7-GE-7Hb"/>
+                                    <constraint firstItem="Mm1-Cv-7Ql" firstAttribute="leading" secondItem="Cwi-UZ-asj" secondAttribute="leading" constant="40" id="g1D-wv-EpJ"/>
+                                    <constraint firstItem="Swk-vk-bud" firstAttribute="leading" secondItem="Cwi-UZ-asj" secondAttribute="leading" constant="40" id="gV9-gv-Wzt"/>
+                                    <constraint firstItem="8KG-6z-yXp" firstAttribute="top" secondItem="bMF-qq-tc4" secondAttribute="bottom" constant="30" id="iAf-6N-iQD"/>
+                                    <constraint firstItem="ybw-JI-Ar1" firstAttribute="leading" secondItem="Cwi-UZ-asj" secondAttribute="leading" constant="40" id="k6B-a2-gWN"/>
+                                    <constraint firstItem="e0E-Gu-6GU" firstAttribute="leading" secondItem="Cwi-UZ-asj" secondAttribute="leading" constant="40" id="lb7-lU-Fzb"/>
+                                    <constraint firstAttribute="trailing" secondItem="WD8-lf-1io" secondAttribute="trailing" constant="40" id="nFd-R8-jHK"/>
+                                    <constraint firstItem="e0E-Gu-6GU" firstAttribute="top" secondItem="WD8-lf-1io" secondAttribute="bottom" constant="20" id="oEj-Ms-Uaf"/>
+                                    <constraint firstAttribute="trailing" secondItem="bMF-qq-tc4" secondAttribute="trailing" constant="40" id="ogf-WQ-TJr"/>
+                                    <constraint firstItem="RFF-k9-PCt" firstAttribute="top" secondItem="Swk-vk-bud" secondAttribute="bottom" constant="20" id="pRt-7D-5UL"/>
+                                    <constraint firstItem="Swk-vk-bud" firstAttribute="top" secondItem="8KG-6z-yXp" secondAttribute="bottom" constant="5" id="xg0-s7-c2P"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Cwi-UZ-asj" secondAttribute="trailing" id="SvL-hR-UQC"/>
+                            <constraint firstItem="Cwi-UZ-asj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jmZ-bL-oDp"/>
+                            <constraint firstItem="Cwi-UZ-asj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pkW-lg-MZY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cwi-UZ-asj" secondAttribute="bottom" id="za9-0d-T7N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtEncryptedText" destination="ybw-JI-Ar1" id="rKv-kT-6YK"/>
+                        <outlet property="txtPlainText" destination="Swk-vk-bud" id="Xp1-kk-wbA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
