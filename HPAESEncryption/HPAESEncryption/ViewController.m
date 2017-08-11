@@ -48,7 +48,7 @@
     
     NSString *encryptedText = [[plainTextData base64EncodedStringWithOptions:0] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet alphanumericCharacterSet]];
     
-    NSLog(@"encrypted text: %@", encryptedText);
+    //NSLog(@"encrypted text: %@", encryptedText);
     
     return encryptedText;
     
@@ -63,7 +63,7 @@
     
     NSString *plainText = [[NSString alloc]initWithData:[encryptedTextData AES128DecryptedDataWithKey:ENCRYPTION_AES_KEY iv:ENCRYPTION_AES_IV] encoding:kCFStringEncodingUTF8];
     
-    NSLog(@"decrypted text: %@", plainText);
+    //NSLog(@"decrypted text: %@", plainText);
     
     return plainText;
     
